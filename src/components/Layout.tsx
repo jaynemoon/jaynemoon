@@ -28,7 +28,7 @@ const Layout = () => {
       y: 0, 
       opacity: 1,
       transition: { 
-        type: "spring", 
+        type: "spring" as const, 
         stiffness: 100, 
         damping: 20,
         staggerChildren: 0.1,
@@ -43,7 +43,7 @@ const Layout = () => {
       y: 0, 
       opacity: 1,
       transition: { 
-        type: "spring", 
+        type: "spring" as const, 
         stiffness: 300, 
         damping: 30 
       }
@@ -56,7 +56,7 @@ const Layout = () => {
       scale: 1, 
       opacity: 1,
       transition: { 
-        type: "spring", 
+        type: "spring" as const, 
         stiffness: 200, 
         damping: 20 
       }

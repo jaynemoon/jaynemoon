@@ -315,7 +315,7 @@ const Projects = () => {
                   transition={{ 
                     duration: 0.6, 
                     delay: index * 0.1,
-                    type: "spring",
+                    type: "spring" as const,
                     stiffness: 100
                   }}
                 >

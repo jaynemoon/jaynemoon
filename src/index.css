@@ -1,4 +1,7 @@
-@import "tailwindcss";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
 
@@ -17,74 +20,96 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
 }
 
-.text-shimmer {
-  background: linear-gradient(
-    90deg,
-    theme('colors.moon.light'),
-    theme('colors.moon.accent.blue'),
-    theme('colors.moon.accent.purple'),
-    theme('colors.moon.accent.cyan'),
-    theme('colors.moon.light')
-  );
-  background-size: 400% 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+@layer base {
+  /* Fix emoji and icon sizing */
+  .emoji {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* Constrain large text elements */
+  .text-8xl, .text-9xl {
+    line-height: 1;
+    max-width: 100%;
+  }
 }
 
-.gradient-text {
-  background: linear-gradient(
-    135deg,
-    theme('colors.moon.accent.blue'),
-    theme('colors.moon.accent.purple')
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+@layer components {
+  .text-shimmer {
+    background: linear-gradient(
+      90deg,
+      #e2e8f0,
+      #3b82f6,
+      #8b5cf6,
+      #06b6d4,
+      #e2e8f0
+    );
+    background-size: 400% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-.glass-effect {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
+  .gradient-text {
+    background: linear-gradient(
+      135deg,
+      #3b82f6,
+      #8b5cf6
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-.dark .glass-effect {
-  background: rgba(15, 23, 42, 0.5);
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-}
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
 
-.bg-noise {
-  position: relative;
-}
+  .dark .glass-effect {
+    background: rgba(15, 23, 42, 0.5);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
 
-.bg-noise::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.02'/%3E%3C/svg%3E");
-  pointer-events: none;
-}
+  .bg-noise {
+    position: relative;
+  }
 
-.custom-scrollbar::-webkit-scrollbar {
-  width: 6px;
-}
+  .bg-noise::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.02'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: -1;
+  }
 
-.custom-scrollbar::-webkit-scrollbar-track {
-  background: transparent;
-}
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
 
-.custom-scrollbar::-webkit-scrollbar-thumb {
-  background: theme('colors.moon.accent.blue');
-  border-radius: 3px;
-}
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
 
-.custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: theme('colors.moon.accent.cyan');
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #3b82f6;
+    border-radius: 3px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #06b6d4;
+  }
 }

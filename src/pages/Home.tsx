@@ -86,7 +86,7 @@ const Home = () => {
       scale: 1,
       transition: { 
         duration: 0.5,
-        type: "spring",
+        type: "spring" as const,
         stiffness: 100
       }
     }
@@ -358,7 +358,7 @@ const Home = () => {
                 transition={{ 
                   duration: 0.6, 
                   delay: index * 0.05,
-                  type: "spring",
+                  type: "spring" as const,
                   stiffness: 100
                 }}
                 viewport={{ once: true }}

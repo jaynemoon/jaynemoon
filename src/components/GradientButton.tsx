@@ -60,7 +60,7 @@ const GradientButton = ({
   const motionProps = {
     whileHover: { scale: disabled ? 1 : 1.02 },
     whileTap: { scale: disabled ? 1 : 0.98 },
-    transition: { type: "spring", stiffness: 400, damping: 17 }
+    transition: { type: "spring" as const, stiffness: 400, damping: 17 }
   };
 
   if (to) {
