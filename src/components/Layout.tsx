@@ -1,5 +1,5 @@
 import { Outlet, Link, useLocation } from 'react-router-dom';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import ThemeToggle from './ThemeToggle';
 
@@ -8,11 +8,6 @@ const Layout = () => {
   const { scrollY } = useScroll();
   const [isScrolled, setIsScrolled] = useState(false);
   
-  const backgroundColor = useTransform(
-    scrollY,
-    [0, 100],
-    ['rgba(255, 255, 255, 0.8)', 'rgba(255, 255, 255, 0.95)']
-  );
 
   useEffect(() => {
     const unsubscribe = scrollY.onChange((latest) => {

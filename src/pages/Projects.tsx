@@ -9,132 +9,132 @@ const Projects = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
 
-  const projects = [
-    {
-      id: 1,
-      title: "Neural Style Transfer Studio",
-      description: "AI-powered creative platform that transforms images using neural networks, allowing artists to blend styles with cutting-edge machine learning algorithms.",
-      image: "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=600&h=400&fit=crop&auto=format",
-      technologies: ["TensorFlow.js", "React", "Python", "GANs", "Canvas API"],
-      category: "AI Development",
-      type: "Creative AI",
-      featured: true,
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example",
-      caseStudyUrl: "/projects/neural-style-studio",
-      year: "2024",
-      status: "Live"
-    },
-    {
-      id: 2,
-      title: "Quantum Algorithm Visualizer",
-      description: "Interactive 3D platform for visualizing quantum computing algorithms with real-time quantum state representations and educational simulations.",
-      image: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=600&h=400&fit=crop&auto=format",
-      technologies: ["Three.js", "WebGL", "Qiskit", "D3.js", "TypeScript"],
-      category: "Creative Tech",
-      type: "Data Visualization",
-      featured: true,
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example",
-      caseStudyUrl: "/projects/quantum-viz",
-      year: "2024",
-      status: "Live"
-    },
-    {
-      id: 3,
-      title: "AI-Powered Design System",
-      description: "Revolutionary design system with intelligent component generation, automated accessibility checking, and AI-driven design suggestions.",
-      image: "https://images.unsplash.com/photo-1555421689-d68471e189f2?w=600&h=400&fit=crop&auto=format",
-      technologies: ["React", "TypeScript", "OpenAI API", "Figma API", "Tailwind"],
-      category: "AI Development",
-      type: "Design Tools",
-      featured: true,
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example",
-      caseStudyUrl: "/projects/ai-design-system",
-      year: "2024",
-      status: "Beta"
-    },
-    {
-      id: 4,
-      title: "Immersive Music Synthesizer",
-      description: "WebAudio-based synthesizer with 3D spatial audio, AI-generated harmonies, and collaborative real-time music creation capabilities.",
-      image: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=600&h=400&fit=crop&auto=format",
-      technologies: ["WebAudio API", "Three.js", "Socket.io", "React", "WebRTC"],
-      category: "Creative Tech",
-      type: "Audio Technology",
-      featured: false,
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example",
-      caseStudyUrl: "/projects/music-synth",
-      year: "2023",
-      status: "Live"
-    },
-    {
-      id: 5,
-      title: "Blockchain Art Marketplace",
-      description: "Decentralized platform for digital art trading with NFT integration, smart contracts, and sustainable blockchain technology.",
-      image: "https://images.unsplash.com/photo-1639322537228-f710d846310a?w=600&h=400&fit=crop&auto=format",
-      technologies: ["Solidity", "Web3.js", "React", "IPFS", "Ethereum"],
-      category: "Blockchain",
-      type: "Web3 Platform",
-      featured: false,
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example",
-      caseStudyUrl: "/projects/blockchain-art",
-      year: "2023",
-      status: "Live"
-    },
-    {
-      id: 6,
-      title: "AR Interior Design Tool",
-      description: "Augmented reality application for interior design with 3D object placement, real-time lighting simulation, and collaborative design features.",
-      image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop&auto=format",
-      technologies: ["AR.js", "Three.js", "WebXR", "React", "Computer Vision"],
-      category: "Creative Tech",
-      type: "AR/VR",
-      featured: false,
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example",
-      caseStudyUrl: "/projects/ar-interior",
-      year: "2023",
-      status: "Development"
-    },
-    {
-      id: 7,
-      title: "Real-time Collaboration Platform",
-      description: "Advanced real-time collaboration platform with AI-powered suggestions, integrated video calls, and intelligent workflow optimization.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop&auto=format",
-      technologies: ["Next.js", "Socket.io", "WebRTC", "OpenAI", "PostgreSQL"],
-      category: "Full Stack",
-      type: "Productivity",
-      featured: false,
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example",
-      caseStudyUrl: "/projects/collab-platform",
-      year: "2024",
-      status: "Live"
-    },
-    {
-      id: 8,
-      title: "Voice-Controlled Smart Dashboard",
-      description: "IoT dashboard with natural language processing, voice commands, and predictive analytics for smart home automation.",
-      image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=600&h=400&fit=crop&auto=format",
-      technologies: ["React", "Node.js", "Speech Recognition", "IoT", "Machine Learning"],
-      category: "IoT",
-      type: "Smart Home",
-      featured: false,
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example",
-      caseStudyUrl: "/projects/smart-dashboard",
-      year: "2023",
-      status: "Live"
-    }
-  ];
-
   const categories = ['All', 'AI Development', 'Creative Tech', 'Full Stack', 'Blockchain', 'IoT'];
 
   const filteredProjects = useMemo(() => {
+    const projects = [
+      {
+        id: 1,
+        title: "Neural Style Transfer Studio",
+        description: "AI-powered creative platform that transforms images using neural networks, allowing artists to blend styles with cutting-edge machine learning algorithms.",
+        image: "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=600&h=400&fit=crop&auto=format",
+        technologies: ["TensorFlow.js", "React", "Python", "GANs", "Canvas API"],
+        category: "AI Development",
+        type: "Creative AI",
+        featured: true,
+        liveUrl: "https://example.com",
+        githubUrl: "https://github.com/example",
+        caseStudyUrl: "/projects/neural-style-studio",
+        year: "2024",
+        status: "Live"
+      },
+      {
+        id: 2,
+        title: "Quantum Algorithm Visualizer",
+        description: "Interactive 3D platform for visualizing quantum computing algorithms with real-time quantum state representations and educational simulations.",
+        image: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=600&h=400&fit=crop&auto=format",
+        technologies: ["Three.js", "WebGL", "Qiskit", "D3.js", "TypeScript"],
+        category: "Creative Tech",
+        type: "Data Visualization",
+        featured: true,
+        liveUrl: "https://example.com",
+        githubUrl: "https://github.com/example",
+        caseStudyUrl: "/projects/quantum-viz",
+        year: "2024",
+        status: "Live"
+      },
+      {
+        id: 3,
+        title: "AI-Powered Design System",
+        description: "Revolutionary design system with intelligent component generation, automated accessibility checking, and AI-driven design suggestions.",
+        image: "https://images.unsplash.com/photo-1555421689-d68471e189f2?w=600&h=400&fit=crop&auto=format",
+        technologies: ["React", "TypeScript", "OpenAI API", "Figma API", "Tailwind"],
+        category: "AI Development",
+        type: "Design Tools",
+        featured: true,
+        liveUrl: "https://example.com",
+        githubUrl: "https://github.com/example",
+        caseStudyUrl: "/projects/ai-design-system",
+        year: "2024",
+        status: "Beta"
+      },
+      {
+        id: 4,
+        title: "Immersive Music Synthesizer",
+        description: "WebAudio-based synthesizer with 3D spatial audio, AI-generated harmonies, and collaborative real-time music creation capabilities.",
+        image: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=600&h=400&fit=crop&auto=format",
+        technologies: ["WebAudio API", "Three.js", "Socket.io", "React", "WebRTC"],
+        category: "Creative Tech",
+        type: "Audio Technology",
+        featured: false,
+        liveUrl: "https://example.com",
+        githubUrl: "https://github.com/example",
+        caseStudyUrl: "/projects/music-synth",
+        year: "2023",
+        status: "Live"
+      },
+      {
+        id: 5,
+        title: "Blockchain Art Marketplace",
+        description: "Decentralized platform for digital art trading with NFT integration, smart contracts, and sustainable blockchain technology.",
+        image: "https://images.unsplash.com/photo-1639322537228-f710d846310a?w=600&h=400&fit=crop&auto=format",
+        technologies: ["Solidity", "Web3.js", "React", "IPFS", "Ethereum"],
+        category: "Blockchain",
+        type: "Web3 Platform",
+        featured: false,
+        liveUrl: "https://example.com",
+        githubUrl: "https://github.com/example",
+        caseStudyUrl: "/projects/blockchain-art",
+        year: "2023",
+        status: "Live"
+      },
+      {
+        id: 6,
+        title: "AR Interior Design Tool",
+        description: "Augmented reality application for interior design with 3D object placement, real-time lighting simulation, and collaborative design features.",
+        image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop&auto=format",
+        technologies: ["AR.js", "Three.js", "WebXR", "React", "Computer Vision"],
+        category: "Creative Tech",
+        type: "AR/VR",
+        featured: false,
+        liveUrl: "https://example.com",
+        githubUrl: "https://github.com/example",
+        caseStudyUrl: "/projects/ar-interior",
+        year: "2023",
+        status: "Development"
+      },
+      {
+        id: 7,
+        title: "Real-time Collaboration Platform",
+        description: "Advanced real-time collaboration platform with AI-powered suggestions, integrated video calls, and intelligent workflow optimization.",
+        image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop&auto=format",
+        technologies: ["Next.js", "Socket.io", "WebRTC", "OpenAI", "PostgreSQL"],
+        category: "Full Stack",
+        type: "Productivity",
+        featured: false,
+        liveUrl: "https://example.com",
+        githubUrl: "https://github.com/example",
+        caseStudyUrl: "/projects/collab-platform",
+        year: "2024",
+        status: "Live"
+      },
+      {
+        id: 8,
+        title: "Voice-Controlled Smart Dashboard",
+        description: "IoT dashboard with natural language processing, voice commands, and predictive analytics for smart home automation.",
+        image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=600&h=400&fit=crop&auto=format",
+        technologies: ["React", "Node.js", "Speech Recognition", "IoT", "Machine Learning"],
+        category: "IoT",
+        type: "Smart Home",
+        featured: false,
+        liveUrl: "https://example.com",
+        githubUrl: "https://github.com/example",
+        caseStudyUrl: "/projects/smart-dashboard",
+        year: "2023",
+        status: "Live"
+      }
+    ];
+
     let filtered = selectedFilter === 'All' 
       ? projects 
       : projects.filter(project => project.category === selectedFilter);
@@ -150,7 +150,7 @@ const Projects = () => {
     }
 
     return filtered;
-  }, [selectedFilter, searchQuery, projects]);
+  }, [selectedFilter, searchQuery]);
 
   return (
     <div className="min-h-screen bg-white dark:bg-moon-dark bg-noise">
@@ -458,11 +458,11 @@ const Projects = () => {
                 of technology and creativity.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <GradientButton href="/contact" size="lg">
+                <GradientButton to="/contact" size="lg">
                   <span>Start a Project</span>
                   <span className="text-xl">🚀</span>
                 </GradientButton>
-                <GradientButton href="/about" variant="secondary" size="lg">
+                <GradientButton to="/about" variant="secondary" size="lg">
                   <span>Learn About Me</span>
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />

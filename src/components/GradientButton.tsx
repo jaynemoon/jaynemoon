@@ -1,10 +1,12 @@
 import { motion } from 'framer-motion';
 import { ReactNode } from 'react';
+import { Link } from 'react-router-dom';
 
 interface GradientButtonProps {
   children: ReactNode;
   onClick?: () => void;
   href?: string;
+  to?: string; // For internal navigation
   variant?: 'primary' | 'secondary' | 'ghost';
   size?: 'sm' | 'md' | 'lg';
   className?: string;
@@ -15,6 +17,7 @@ const GradientButton = ({
   children, 
   onClick, 
   href,
+  to,
   variant = 'primary',
   size = 'md',
   className = '',
@@ -59,6 +62,19 @@ const GradientButton = ({
     whileTap: { scale: disabled ? 1 : 0.98 },
     transition: { type: "spring", stiffness: 400, damping: 17 }
   };
+
+  if (to) {
+    return (
+      <motion.div {...motionProps}>
+        <Link
+          to={to}
+          className={buttonClasses}
+        >
+          {buttonContent}
+        </Link>
+      </motion.div>
+    );
+  }
 
   if (href) {
     return (

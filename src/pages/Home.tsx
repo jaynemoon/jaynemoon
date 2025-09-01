@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import AnimatedSection from '../components/AnimatedSection';
@@ -161,14 +160,14 @@ const Home = () => {
               className="flex flex-col sm:flex-row gap-6 justify-center items-center"
               variants={heroItemVariants}
             >
-              <GradientButton href="/projects" size="lg">
+              <GradientButton to="/projects" size="lg">
                 <span>Explore My Universe</span>
                 <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </GradientButton>
               
-              <GradientButton href="/contact" variant="secondary" size="lg">
+              <GradientButton to="/contact" variant="secondary" size="lg">
                 <span>Let's Connect</span>
                 <span className="text-xl">✨</span>
               </GradientButton>
@@ -300,7 +299,7 @@ const Home = () => {
           </motion.div>
 
           <AnimatedSection className="text-center mt-16" delay={0.4}>
-            <GradientButton href="/projects" size="lg">
+            <GradientButton to="/projects" size="lg">
               <span>Explore All Projects</span>
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -429,7 +428,7 @@ const Home = () => {
                   </div>
                 </div>
 
-                <GradientButton href="/about" size="lg">
+                <GradientButton to="/about" size="lg">
                   <span>Learn More About Me</span>
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -495,7 +494,7 @@ const Home = () => {
 
           <AnimatedSection delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
-              <GradientButton href="/contact" size="lg">
+              <GradientButton to="/contact" size="lg">
                 <span>Start a Conversation</span>
                 <span className="text-xl">💫</span>
               </GradientButton>
