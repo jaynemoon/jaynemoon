@@ -302,17 +302,14 @@ const Layout = () => {
           </div>
 
           <motion.div 
-            className="border-t border-moon-accent-silver/10 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center"
+            className="border-t border-moon-accent-silver/10 mt-16 pt-8 flex flex-col md:flex-row justify-center items-center"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <p className="text-moon-light/50 text-sm mb-4 md:mb-0">
-              &copy; 2025 Jayne Moon. Crafted with 🖤 & lots of ☕️
-            </p>
             <div className="text-xs text-moon-light/40 font-mono">
-              Built with React.js, Framer Motion & Tailwind CSS
+               &copy; 2025 Jayne Moon | Crafted with 🤍 & lots of ☕️
             </div>
           </motion.div>
         </div>

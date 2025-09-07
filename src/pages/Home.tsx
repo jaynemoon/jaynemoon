@@ -210,7 +210,8 @@ const Home = () => {
               </span>
             </motion.div>
             <h2 className="text-5xl md:text-7xl font-bold mb-6">
-              <span className="gradient-text">Creative</span> Portfolio
+              <span className="gradient-text">Creative</span>
+              <span className="text-gray-900 dark:text-moon-light transition-all duration-300"> Portfolio</span>
             </h2>
             <p className="text-xl text-gray-600 dark:text-moon-light/70 max-w-3xl mx-auto leading-relaxed">
               Explore innovative projects that push the boundaries of technology and design, 
@@ -320,7 +321,8 @@ const Home = () => {
               </span>
             </motion.div>
             <h2 className="text-5xl md:text-7xl font-bold mb-6">
-              <span className="gradient-text">Digital</span> Constellation
+              <span className="gradient-text">Digital</span> 
+              <span className="text-gray-900 dark:text-moon-light transition-all duration-300"> Constellation</span>
             </h2>
             <p className="text-xl text-gray-600 dark:text-moon-light/70 max-w-3xl mx-auto">
               Advanced technologies and frameworks powering innovative solutions across AI, 
@@ -406,7 +408,7 @@ const Home = () => {
                   </span>
                   <h2 className="text-5xl md:text-6xl font-bold mb-6">
                     <span className="gradient-text">Design</span><br/>
-                    Technologist
+                    <span className="text-gray-900 dark:text-moon-light transition-all duration-300"> Technologist</span>
                   </h2>
                 </motion.div>
                 
