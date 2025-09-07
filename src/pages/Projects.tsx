@@ -177,7 +177,6 @@ const Projects = () => {
                   ease: "easeInOut" 
                 }}
               >
-                🌙
               </motion.span>
             </motion.div>
             

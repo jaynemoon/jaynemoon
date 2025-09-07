@@ -91,7 +91,6 @@ const Layout = () => {
                   animate={{ rotate: [0, 5, -5, 0] }}
                   transition={{ duration: 2, repeat: Infinity, repeatDelay: 3 }}
                 >
-                  🌙
                 </motion.span>
                 <span className="group-hover:text-shimmer group-hover:animate-text-shimmer">
                   Jayne Moon
@@ -202,7 +201,6 @@ const Layout = () => {
                   animate={{ rotate: [0, 10, -10, 0] }}
                   transition={{ duration: 4, repeat: Infinity, repeatDelay: 2 }}
                 >
-                  🌙
                 </motion.span>
                 <span className="text-2xl font-bold gradient-text">Jayne Moon</span>
               </div>

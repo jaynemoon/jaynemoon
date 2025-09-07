@@ -17,7 +17,7 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <span className="inline-block text-5xl mb-4">🌙</span>
+            <span className="inline-block text-5xl mb-4"></span>
           </motion.div>
           <motion.h1 
             className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6"
@@ -65,7 +65,7 @@ const About = () => {
                 whileHover={{ scale: 1.05 }}
               >
                 <div className="w-48 h-48 rounded-full mx-auto bg-gradient-to-r from-stellar-blue-400 to-stellar-accent-purple flex items-center justify-center border-4 border-white dark:border-stellar-slate-600">
-                  <span className="text-8xl">🌙</span>
+                  <span className="text-8xl"></span>
                 </div>
               </motion.div>
               <h3 className="text-xl font-bold text-white mb-2">Jayne Moon</h3>

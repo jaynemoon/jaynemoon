@@ -44,7 +44,7 @@ const Contact = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <span className="inline-block text-5xl mb-4">🌙</span>
+            <span className="inline-block text-5xl mb-4"></span>
           </motion.div>
           <motion.h1 
             className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6"
