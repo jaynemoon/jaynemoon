@@ -181,8 +181,8 @@ const Projects = () => {
             </motion.div>
             
             <h1 className="text-6xl md:text-8xl font-bold mb-6">
-              <span className="gradient-text text-shimmer animate-text-shimmer">Creative</span><br/>
-              Universe
+              <span className="gradient-text text-shimmer animate-text-shimmer">Featured</span><br/>
+              Work
             </h1>
             
             <p className="text-xl text-gray-600 dark:text-moon-light/80 max-w-4xl mx-auto leading-relaxed">
