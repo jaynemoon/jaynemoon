@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import profileImg from '../assets/pixel-profile.png';
 
 const About = () => {
   return (
@@ -33,7 +34,7 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            Passionate full-stack developer illuminating the digital landscape 
+            She is a passionate full-stack developer illuminating the digital landscape 
             with moonlit creativity and innovative solutions.
           </motion.p>
         </motion.div>
@@ -65,6 +66,10 @@ const About = () => {
                 whileHover={{ scale: 1.05 }}
               >
                 <div className="w-48 h-48 rounded-full mx-auto bg-gradient-to-r from-stellar-blue-400 to-stellar-accent-purple flex items-center justify-center border-4 border-white dark:border-stellar-slate-600">
+                  <img
+                      src={profileImg}
+                      alt={'profile-image'}
+                    />
                   <span className="text-8xl"></span>
                 </div>
               </motion.div>

@@ -309,10 +309,10 @@ const Layout = () => {
             viewport={{ once: true }}
           >
             <p className="text-moon-light/50 text-sm mb-4 md:mb-0">
-              &copy; 2024 Jayne Moon. Crafted with 🖤 and lots of ☕
+              &copy; 2025 Jayne Moon. Crafted with 🖤 & lots of ☕️
             </p>
             <div className="text-xs text-moon-light/40 font-mono">
-              Built with React, Framer Motion & Tailwind CSS
+              Built with React.js, Framer Motion & Tailwind CSS
             </div>
           </motion.div>
         </div>
