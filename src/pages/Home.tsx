@@ -232,7 +232,7 @@ const Home = () => {
                 variants={projectItemVariants}
                 className={`group ${index === 0 ? 'lg:col-span-2 lg:row-span-2' : ''}`}
               >
-                <div className="relative h-full glass-effect rounded-2xl overflow-hidden border border-moon-accent-silver/10 dark:border-moon-accent-blue/10 transition-all duration-500 hover:border-moon-accent-blue/30">
+                <div className="relative h-full glass-effect rounded-2xl overflow-hidden border border-moon-accent-silver/10 dark:border-moon-accent-blue/10 text-gray-900 dark:text-moon-light transition-all duration-500 hover:border-moon-accent-blue/30">
                   <div className="relative overflow-hidden">
                     <img
                       src={project.image}
