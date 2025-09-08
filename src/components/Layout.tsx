@@ -287,16 +287,16 @@ const Layout = () => {
                 </li>
                 <li>
                   <span className="flex items-center space-x-2 text-moon-light/70">
-                    <span>📍</span>
+                    <span>✅</span>
                     <span>Available worldwide</span>
                   </span>
                 </li>
-                <li>
+                {/* <li>
                   <span className="flex items-center space-x-2 text-moon-light/70">
                     <span>⏰</span>
                     <span>GMT-8 (PST)</span>
                   </span>
-                </li>
+                </li> */}
               </ul>
             </motion.div>
           </div>

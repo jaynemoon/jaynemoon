@@ -319,9 +319,8 @@ const Projects = () => {
                     stiffness: 100
                   }}
                 >
-                  <div className={`glass-effect rounded-2xl overflow-hidden border border-moon-accent-silver/10 dark:border-moon-accent-blue/10 
-                                 transition-all duration-500 hover:border-moon-accent-blue/30 hover:shadow-glow-lg group-hover:scale-[1.02]
-                                 ${viewMode === 'list' ? 'flex-1 flex' : 'h-full'}`}>
+                  <div className={`glass-effect rounded-2xl overflow-hidden border border-moon-accent-silver/10 dark:border-moon-accent-blue/10 text-gray-900 dark:text-moon-light transition-all duration-500 hover:border-moon-accent-blue/30 hover:shadow-glow-lg group-hover:scale-[1.02]
+                  ${viewMode === 'list' ? 'flex-1 flex' : 'h-full'}`}>
                     
                     {/* Project Image */}
                     <div className={`relative overflow-hidden ${viewMode === 'list' ? 'w-80 flex-shrink-0' : ''}`}>
