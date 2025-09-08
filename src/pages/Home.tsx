@@ -166,10 +166,9 @@ const Home = () => {
                 </svg>
               </GradientButton>
               
-              <GradientButton to="/contact" variant="secondary" size="lg">
-                <span>Let's Connect</span>
-                <span className="text-xl">✨</span>
-              </GradientButton>
+              {/* <GradientButton to="/contact" variant="secondary" size="lg">
+                <span className="font-mono">Let's Connect</span>
+              </GradientButton> */}
             </motion.div>
             
             <motion.div 
@@ -205,13 +204,13 @@ const Home = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="text-center mb-20" delay={0.1}>
             <motion.div className="mb-6">
-              <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-moon-accent-blue/10 text-moon-accent-blue dark:bg-moon-accent-blue/5 dark:text-moon-accent-cyan border border-moon-accent-blue/20">
-                ✨ Featured Work
+              <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-mono font-medium bg-moon-accent-blue/10 text-moon-accent-blue dark:bg-moon-accent-blue/5 dark:text-moon-accent-cyan border border-moon-accent-blue/20">
+                Featured Work
               </span>
             </motion.div>
             <h2 className="text-5xl md:text-7xl font-bold mb-6">
               <span className="gradient-text">Creative</span>
-              <span className="text-gray-900 dark:text-moon-light transition-all duration-300"> Portfolio</span>
+              <span className="text-gray-900 dark:text-moon-light transition-all duration-300">Works</span>
             </h2>
             <p className="text-xl text-gray-600 dark:text-moon-light/70 max-w-3xl mx-auto leading-relaxed">
               Explore innovative projects that push the boundaries of technology and design, 
@@ -270,7 +269,7 @@ const Home = () => {
                         {project.technologies.map((tech) => (
                           <span
                             key={tech}
-                            className="px-3 py-1 text-xs font-medium bg-moon-accent-blue/10 text-moon-accent-blue dark:text-moon-accent-cyan rounded-full border border-moon-accent-blue/20 hover:bg-moon-accent-blue/20 transition-colors"
+                            className="px-3 py-1 text-xs font-mono font-medium bg-moon-accent-blue/10 text-moon-accent-blue dark:text-moon-accent-cyan rounded-full border border-moon-accent-blue/20 hover:bg-moon-accent-blue/20 transition-colors"
                           >
                             {tech}
                           </span>
@@ -305,8 +304,8 @@ const Home = () => {
           </motion.div>
 
           <AnimatedSection className="text-center mt-16" delay={0.4}>
-            <GradientButton to="/projects" size="lg">
-              <span>Explore All Projects</span>
+            <GradientButton to="/projects" variant="secondary" size="lg">
+              <span>View Featured Work</span>
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
@@ -322,7 +321,7 @@ const Home = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="text-center mb-20">
             <motion.div className="mb-6">
-              <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-moon-accent-purple/10 text-moon-accent-purple dark:bg-moon-accent-purple/5 border border-moon-accent-purple/20">
+              <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-mono font-medium bg-moon-accent-purple/10 text-moon-accent-purple dark:bg-moon-accent-purple/5 border border-moon-accent-purple/20">
                 📚 My Tech Stack
               </span>
             </motion.div>
@@ -409,7 +408,7 @@ const Home = () => {
             <AnimatedSection direction="left" delay={0.1}>
               <div className="space-y-8">
                 <motion.div>
-                  <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-moon-accent-cyan/10 text-moon-accent-cyan dark:bg-moon-accent-cyan/5 border border-moon-accent-cyan/20 mb-6">
+                  <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-mono font-medium bg-moon-accent-cyan/10 text-moon-accent-cyan dark:bg-moon-accent-cyan/5 border border-moon-accent-cyan/20 mb-6">
                     👋 About Me
                   </span>
                   <h2 className="text-5xl md:text-6xl font-bold mb-6">
@@ -424,7 +423,7 @@ const Home = () => {
                   inspire and transform user experiences.
                 </p>
                 
-                <div className="flex items-center space-x-8 text-sm text-gray-500 dark:text-moon-light/60">
+                <div className="flex items-center space-x-8 text-sm font-mono text-gray-500 dark:text-moon-light/60">
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
                     <span>Available for projects</span>
@@ -482,7 +481,7 @@ const Home = () => {
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection delay={0.1}>
             <motion.div className="mb-8">
-              <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-moon-accent-blue/20 text-moon-accent-cyan border border-moon-accent-blue/30 mb-6">
+              <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-mono font-medium bg-moon-accent-blue/20 text-moon-accent-cyan border border-moon-accent-blue/30 mb-6">
                 💬 Let's Collaborate
               </span>
               <h2 className="text-5xl md:text-7xl font-bold mb-6">

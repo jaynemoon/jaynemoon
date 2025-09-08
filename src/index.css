@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Poppins', system-ui, sans-serif;
   font-feature-settings: 'cv11', 'ss01';
   font-variation-settings: 'opsz' 32;
   text-rendering: optimizeLegibility;
@@ -29,7 +29,8 @@ body {
 }
 
 h1 {
-  font-family: 'Goldman', system-ui, sans-serif;
+  font-family: 'Poppins-900', system-ui, sans-serif;
+  letter-spacing: 0.8rem;
 }
 
 @layer base {
