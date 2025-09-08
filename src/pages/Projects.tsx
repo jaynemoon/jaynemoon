@@ -182,7 +182,8 @@ const Projects = () => {
             
             <h1 className="text-6xl md:text-8xl font-bold mb-6">
               <span className="gradient-text text-shimmer animate-text-shimmer">Featured</span><br/>
-              Work
+              <span className="text-gray-900 dark:text-moon-light transition-all duration-300"> 
+              Work</span>
             </h1>
             
             <p className="text-xl text-gray-600 dark:text-moon-light/80 max-w-4xl mx-auto leading-relaxed">
@@ -196,7 +197,7 @@ const Projects = () => {
           <AnimatedSection className="mb-16" delay={0.2}>
             <div className="flex flex-col lg:flex-row gap-6 items-center justify-between mb-8">
               {/* Search Bar */}
-              <div className="relative flex-1 max-w-md">
+              {/* <div className="relative flex-1 max-w-md">
                 <input
                   type="text"
                   placeholder="Search projects, technologies..."
@@ -212,7 +213,7 @@ const Projects = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                   </svg>
                 </div>
-              </div>
+              </div> */}
               
               {/* View Toggle */}
               <div className="flex items-center gap-2 glass-effect rounded-xl p-1 border border-moon-accent-silver/10 dark:border-moon-accent-blue/10">
