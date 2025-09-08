@@ -108,9 +108,8 @@ const Layout = () => {
               variants={navVariants}
             >
               {[
-                { path: '/', label: 'Home' },
-                { path: '/about', label: 'About' },
                 { path: '/projects', label: 'Projects' },
+                { path: '/about', label: 'About' },
                 { path: '/contact', label: 'Contact' }
               ].map((item) => (
                 <motion.div key={item.path} variants={navItemVariants}>
@@ -242,9 +241,8 @@ const Layout = () => {
               <h3 className="text-sm font-semibold text-moon-accent-cyan mb-6 uppercase tracking-widest">Navigate</h3>
               <ul className="space-y-4">
                 {[
-                  { to: '/', label: 'Home' },
-                  { to: '/about', label: 'About' },
                   { to: '/projects', label: 'Projects' },
+                  { to: '/about', label: 'About' },
                   { to: '/contact', label: 'Contact' }
                 ].map((link) => (
                   <li key={link.to}>
