@@ -232,13 +232,15 @@ const Home = () => {
                 variants={projectItemVariants}
                 className={`group ${index === 0 ? 'lg:col-span-2 lg:row-span-2' : ''}`}
               >
-                <div className="relative h-full glass-effect rounded-2xl overflow-hidden border border-moon-accent-silver/10 dark:border-moon-accent-blue/10 text-gray-900 dark:text-moon-light transition-all duration-500 hover:border-moon-accent-blue/30">
-                  <div className="relative overflow-hidden">
+                <div className={`relative h-full glass-effect rounded-2xl overflow-hidden border border-moon-accent-silver/10 dark:border-moon-accent-blue/10 text-gray-900 dark:text-moon-light transition-all duration-500 hover:border-moon-accent-blue/30 ${
+                  index === 0 ? 'flex flex-col' : ''
+                }`}>
+                  <div className={`relative overflow-hidden ${index === 0 ? 'flex-1' : ''}`}>
                     <img
                       src={project.image}
                       alt={project.title}
                       className={`w-full object-cover group-hover:scale-110 transition-transform duration-700 ${
-                        index === 0 ? 'h-64 lg:h-80' : 'h-48'
+                        index === 0 ? 'h-full min-h-[300px] lg:min-h-[400px]' : 'h-48'
                       }`}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-moon-dark/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -249,48 +251,52 @@ const Home = () => {
                     </div>
                   </div>
                   
-                  <div className={`p-6 ${index === 0 ? 'lg:p-8' : ''}`}>
-                    <h3 className={`font-bold mb-3 group-hover:gradient-text transition-all duration-300 ${
-                      index === 0 ? 'text-2xl lg:text-3xl' : 'text-xl'
-                    }`}>
-                      {project.title}
-                    </h3>
-                    <p className={`text-gray-600 dark:text-moon-light/70 mb-6 leading-relaxed ${
-                      index === 0 ? 'text-lg' : 'text-base'
-                    }`}>
-                      {project.description}
-                    </p>
-                    
-                    <div className="flex flex-wrap gap-2 mb-6">
-                      {project.technologies.map((tech) => (
-                        <span
-                          key={tech}
-                          className="px-3 py-1 text-xs font-medium bg-moon-accent-blue/10 text-moon-accent-blue dark:text-moon-accent-cyan rounded-full border border-moon-accent-blue/20 hover:bg-moon-accent-blue/20 transition-colors"
-                        >
-                          {tech}
-                        </span>
-                      ))}
+                  <div className={`p-6 ${index === 0 ? 'lg:p-8 flex flex-col justify-between' : ''}`}>
+                    <div>
+                      <h3 className={`font-bold mb-3 group-hover:gradient-text transition-all duration-300 ${
+                        index === 0 ? 'text-2xl lg:text-3xl' : 'text-xl'
+                      }`}>
+                        {project.title}
+                      </h3>
+                      <p className={`text-gray-600 dark:text-moon-light/70 mb-6 leading-relaxed ${
+                        index === 0 ? 'text-lg' : 'text-base'
+                      }`}>
+                        {project.description}
+                      </p>
                     </div>
                     
-                    <div className="flex gap-3">
-                      <GradientButton 
-                        href={project.liveUrl}
-                        size={index === 0 ? 'md' : 'sm'}
-                        className="flex-1"
-                      >
-                        <span>View Live</span>
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                        </svg>
-                      </GradientButton>
-                      <GradientButton
-                        href={project.caseStudyUrl}
-                        variant="secondary"
-                        size={index === 0 ? 'md' : 'sm'}
-                        className="flex-1"
-                      >
-                        <span>Case Study</span>
-                      </GradientButton>
+                    <div>
+                      <div className="flex flex-wrap gap-2 mb-6">
+                        {project.technologies.map((tech) => (
+                          <span
+                            key={tech}
+                            className="px-3 py-1 text-xs font-medium bg-moon-accent-blue/10 text-moon-accent-blue dark:text-moon-accent-cyan rounded-full border border-moon-accent-blue/20 hover:bg-moon-accent-blue/20 transition-colors"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+                      
+                      <div className="flex gap-3">
+                        <GradientButton 
+                          href={project.liveUrl}
+                          size={index === 0 ? 'md' : 'sm'}
+                          className="flex-1"
+                        >
+                          <span>View Live</span>
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                          </svg>
+                        </GradientButton>
+                        <GradientButton
+                          href={project.caseStudyUrl}
+                          variant="secondary"
+                          size={index === 0 ? 'md' : 'sm'}
+                          className="flex-1"
+                        >
+                          <span>Case Study</span>
+                        </GradientButton>
+                      </div>
                     </div>
                   </div>
                 </div>
