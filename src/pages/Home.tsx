@@ -138,7 +138,7 @@ const Home = () => {
               className="text-6xl md:text-8xl lg:text-9xl font-bold mb-8 text-gray-900 dark:text-moon-light leading-tight"
               variants={heroItemVariants}
             >
-              <span className="block text-2xl md:text-3xl font-normal text-gray-600 dark:text-moon-light/60 mb-4 tracking-wider">
+              <span className="block text-2xl md:text-3xl font-mono text-gray-600 dark:text-moon-light/60 mb-4 tracking-wider">
                 Design Technologist
               </span>
               <span className="gradient-text text-shimmer animate-text-shimmer">
@@ -160,7 +160,7 @@ const Home = () => {
               variants={heroItemVariants}
             >
               <GradientButton to="/projects" size="lg">
-                <span>Explore My Universe</span>
+                <span>Explore My Projects</span>
                 <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
@@ -317,7 +317,7 @@ const Home = () => {
           <AnimatedSection className="text-center mb-20">
             <motion.div className="mb-6">
               <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-moon-accent-purple/10 text-moon-accent-purple dark:bg-moon-accent-purple/5 border border-moon-accent-purple/20">
-                🚀 Tech Arsenal
+                📚 My Tech Stack
               </span>
             </motion.div>
             <h2 className="text-5xl md:text-7xl font-bold mb-6">

@@ -4,6 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 * {
   box-sizing: border-box;
@@ -22,6 +23,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  font-family: 'Audiowide', system-ui, sans-serif;
 }
 
 @layer base {
@@ -47,7 +52,7 @@ body {
       90deg,
       #e2e8f0,
       #3b82f6,
-      #8b5cf6,
+      #ea15ca,
       #06b6d4,
       #e2e8f0
     );
@@ -61,7 +66,7 @@ body {
     background: linear-gradient(
       135deg,
       #3b82f6,
-      #8b5cf6
+      #ea15ca
     );
     background-clip: text;
     -webkit-background-clip: text;

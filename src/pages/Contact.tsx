@@ -52,7 +52,7 @@ const Contact = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Let's Connect
+            Let's work together!
           </motion.h1>
           <motion.p 
             className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto"
@@ -84,7 +84,7 @@ const Contact = () => {
               transition={{ duration: 0.5, delay: 1 }}
             >
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-                Let's Start a Conversation
+                Get in touch
               </h2>
               <p className="text-gray-600 dark:text-gray-300 mb-8">
                 Whether you have a moonlit project idea, want to collaborate, or just
@@ -214,14 +214,6 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.8 }}
             whileHover={{ scale: 1.01 }}
           >
-            <motion.h2 
-              className="text-2xl font-bold text-gray-900 mb-6"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 1 }}
-            >
-              Send Me a Message
-            </motion.h2>
             <motion.form 
               onSubmit={handleSubmit} 
               className="space-y-6"
@@ -234,8 +226,8 @@ const Contact = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 1.4 }}
               >
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                  Name *
+                <label htmlFor="name" className="block text-sm font-medium text-gray-700  dark:text-moon-light/100 mb-2">
+                  Name:
                 </label>
                 <motion.input
                   type="text"
@@ -255,8 +247,8 @@ const Contact = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 1.5 }}
               >
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                  Email *
+                <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-moon-light/80 mb-2">
+                  Email:
                 </label>
                 <motion.input
                   type="email"
@@ -276,8 +268,8 @@ const Contact = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 1.6 }}
               >
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-                  Subject *
+                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-moon-light/100 mb-2">
+                  Subject:
                 </label>
                 <motion.input
                   type="text"
@@ -297,8 +289,8 @@ const Contact = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 1.7 }}
               >
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                  Message *
+                <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-moon-light/100 mb-2">
+                  Message:
                 </label>
                 <motion.textarea
                   id="message"
