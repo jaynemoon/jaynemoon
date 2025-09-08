@@ -449,7 +449,7 @@ const Projects = () => {
           {/* Call to Action */}
           <AnimatedSection className="text-center mt-20 pt-20 border-t border-moon-accent-silver/10 dark:border-moon-accent-blue/10">
             <div className="max-w-2xl mx-auto">
-              <h2 className="text-4xl font-bold mb-6">
+              <h2 className="text-4xl font-bold dark:text-moon-light mb-6">
                 Ready to <span className="gradient-text">Collaborate</span>?
               </h2>
               <p className="text-xl text-gray-600 dark:text-moon-light/80 mb-8">
