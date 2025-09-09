@@ -3,6 +3,7 @@ import { useRef } from 'react';
 import AnimatedSection from '../components/AnimatedSection';
 import GradientButton from '../components/GradientButton';
 import FloatingElements from '../components/FloatingElements';
+import profileHero from '../assets/hero-profile.png';
 
 const Home = () => {
   const containerRef = useRef(null);
@@ -95,7 +96,7 @@ const Home = () => {
   return (
     <div ref={containerRef} className="min-h-screen bg-noise">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative flex items-center justify-center overflow-hidden">
         <FloatingElements />
         
         {/* Animated background gradients */}
@@ -107,7 +108,7 @@ const Home = () => {
           <div className="absolute inset-0 bg-gradient-radial from-moon-accent-blue/10 via-transparent to-transparent" />
         </motion.div>
         
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 z-10">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-4 lg:px-4 py-2 z-10">
           <motion.div 
             className="text-center"
             style={{ y: textY }}
@@ -136,11 +137,11 @@ const Home = () => {
             
             {/* Profile Image */}
             <motion.div 
-              className="mb-4"
+              className="mb-8"
               variants={heroItemVariants}
             >
               <motion.div 
-                className="relative w-32 h-32 md:w-36 md:h-36 mx-auto mb-4"
+                className="relative w-28 h-28 md:w-36 md:h-36 mx-auto mb-4"
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ 
                   scale: 1, 
@@ -148,18 +149,18 @@ const Home = () => {
                   y: [0, -8, 0]
                 }}
                 transition={{ 
-                  scale: { duration: 1, ease: "easeOut", delay: 0.5 },
+                  scale: { duration: 1, ease: "easeInOut", delay: 0.5 },
                   opacity: { duration: 1, delay: 0.5 },
                   y: { duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1.5 }
                 }}
               >
                 <motion.img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&auto=format&crop=face"
+                  src={profileHero}
                   alt="Jayne Moon"
-                  className="w-full h-full rounded-full object-cover filter grayscale opacity-60"
+                  className="w-full h-full rounded-full object-cover filter opacity-90"
                   whileHover={{ 
                     scale: 1.1,
-                    filter: "grayscale(20%)",
+                    filter: "green(20%)",
                     opacity: 1,
                     rotateY: 5
                   }}
@@ -190,16 +191,16 @@ const Home = () => {
               className="text-6xl md:text-8xl lg:text-9xl font-bold mb-6 text-gray-900 dark:text-moon-light leading-tight"
               variants={heroItemVariants}
             >
-              <span className="block text-2xl md:text-3xl font-mono text-gray-600 dark:text-moon-light/60 mb-4 tracking-wider">
+              <span className="block text-2xl md:text-2xl font-mono text-gray-600 dark:text-moon-light/60 mb-4 tracking-wider">
                 Design Technologist
               </span>
-              <span className="gradient-text text-shimmer animate-text-shimmer">
+              <span className="gradient-text text-shimmer animate-text-shimmer tracking-wider mb-4">
                 Jayne Moon
               </span>
             </motion.h1>
             
             <motion.p 
-              className="text-xl md:text-2xl mb-10 max-w-4xl mx-auto text-gray-700 dark:text-moon-light/80 leading-relaxed"
+              className="text-lg md:text-1xl mb-6 max-w-3xl mx-auto text-gray-700 dark:text-moon-light/80 leading-relaxed"
               variants={heroItemVariants}
             >
               Crafting cutting-edge digital experiences where{' '}
@@ -211,8 +212,8 @@ const Home = () => {
               className="flex flex-col sm:flex-row gap-6 justify-center items-center"
               variants={heroItemVariants}
             >
-              <GradientButton to="/projects" size="lg">
-                <span>Explore My Projects</span>
+              <GradientButton to="/projects" size="md">
+                <span className="font-mono">Explore My Projects</span>
                 <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
@@ -224,7 +225,7 @@ const Home = () => {
             </motion.div>
             
             <motion.div 
-              className="mt-12 text-sm text-gray-500 dark:text-moon-light/40"
+              className="mt-8 text-sm text-gray-500 dark:text-moon-light/40 z-10"
               variants={heroItemVariants}
             >
               <motion.div
@@ -356,7 +357,7 @@ const Home = () => {
           </motion.div>
 
           <AnimatedSection className="text-center mt-16" delay={0.4}>
-            <GradientButton to="/projects" variant="secondary" size="lg">
+            <GradientButton to="/projects" variant="primary" size="lg">
               <span>View Featured Work</span>
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
