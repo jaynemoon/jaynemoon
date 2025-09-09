@@ -96,7 +96,7 @@ const Home = () => {
   return (
     <div ref={containerRef} className="min-h-screen bg-noise">
       {/* Hero Section */}
-      <section className="relative flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <FloatingElements />
         
         {/* Animated background gradients */}
@@ -108,7 +108,7 @@ const Home = () => {
           <div className="absolute inset-0 bg-gradient-radial from-moon-accent-blue/10 via-transparent to-transparent" />
         </motion.div>
         
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-4 lg:px-4 py-2 z-10">
+        <div className="relative max-w-7xl mx-auto px-2 sm:px-2 lg:px-2 py-2 z-8">
           <motion.div 
             className="text-center"
             style={{ y: textY }}
@@ -141,7 +141,7 @@ const Home = () => {
               variants={heroItemVariants}
             >
               <motion.div 
-                className="relative w-28 h-28 md:w-36 md:h-36 mx-auto mb-4"
+                className="relative w-32 h-32 md:w-36 md:h-36 mx-auto mb-4"
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ 
                   scale: 1, 
@@ -225,7 +225,7 @@ const Home = () => {
             </motion.div>
             
             <motion.div 
-              className="mt-8 text-sm text-gray-500 dark:text-moon-light/40 z-10"
+              className="m-12 text-sm text-gray-500 dark:text-moon-light/40 z-10"
               variants={heroItemVariants}
             >
               <motion.div
@@ -240,7 +240,7 @@ const Home = () => {
       </section>
 
       {/* Featured Projects Section */}
-      <AnimatedSection className="py-32 relative bg-gradient-to-b from-white to-gray-50 dark:from-moon-dark dark:to-moon-darker overflow-hidden">
+      <AnimatedSection className="py-48 relative bg-gradient-to-b from-white to-gray-50 dark:from-moon-dark dark:to-moon-darker overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
           <motion.div
             className="absolute -top-40 -right-40 w-80 h-80 bg-moon-accent-blue/5 rounded-full blur-3xl"
@@ -368,7 +368,7 @@ const Home = () => {
       </AnimatedSection>
 
       {/* Tech Stack Section */}
-      <AnimatedSection className="py-32 bg-white dark:bg-moon-dark relative overflow-hidden">
+      <AnimatedSection className="py-48 bg-white dark:bg-moon-dark relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-moon-accent-blue/5 via-transparent to-moon-accent-purple/5" />
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -447,7 +447,7 @@ const Home = () => {
       </AnimatedSection>
 
       {/* About Preview Section */}
-      <AnimatedSection className="py-32 bg-gradient-to-br from-gray-50 to-white dark:from-moon-darker dark:to-moon-dark relative overflow-hidden">
+      <AnimatedSection className="py-48 bg-gradient-to-br from-gray-50 to-white dark:from-moon-darker dark:to-moon-dark relative overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
           <motion.div
             className="absolute top-20 right-20 w-72 h-72 bg-moon-accent-cyan/5 rounded-full blur-3xl"
@@ -527,11 +527,11 @@ const Home = () => {
       </AnimatedSection>
 
       {/* Contact Preview Section */}
-      <AnimatedSection className="py-32 bg-moon-dark text-moon-light relative overflow-hidden">
+      <AnimatedSection className="py-48 bg-moon-dark text-moon-light relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-moon-accent-blue/10 via-moon-dark to-moon-accent-purple/10" />
         <FloatingElements />
 
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection delay={0.1}>
             <motion.div className="mb-8">
               <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-mono font-medium bg-moon-accent-blue/20 text-moon-accent-cyan border border-moon-accent-blue/30 mb-6">
