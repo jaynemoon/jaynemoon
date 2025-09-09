@@ -134,8 +134,60 @@ const Home = () => {
               </motion.span>
             </motion.div>
             
+            {/* Profile Image */}
+            <motion.div 
+              className="mb-4"
+              variants={heroItemVariants}
+            >
+              <motion.div 
+                className="relative w-32 h-32 md:w-36 md:h-36 mx-auto mb-4"
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ 
+                  scale: 1, 
+                  opacity: 1,
+                  y: [0, -8, 0]
+                }}
+                transition={{ 
+                  scale: { duration: 1, ease: "easeOut", delay: 0.5 },
+                  opacity: { duration: 1, delay: 0.5 },
+                  y: { duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1.5 }
+                }}
+              >
+                <motion.img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&auto=format&crop=face"
+                  alt="Jayne Moon"
+                  className="w-full h-full rounded-full object-cover filter grayscale opacity-60"
+                  whileHover={{ 
+                    scale: 1.1,
+                    filter: "grayscale(20%)",
+                    opacity: 1,
+                    rotateY: 5
+                  }}
+                  transition={{
+                    duration: 0.5,
+                    ease: "easeInOut"
+                  }}
+                />
+                <motion.div
+                  className="absolute inset-0 rounded-full"
+                  initial={{ opacity: 0.3, scale: 0.5 }}
+                  animate={{ 
+                    scale: [1, 1.1, 1],
+                    opacity: [0, 0.5, 0]
+                  }}
+                  transition={{ 
+                    duration: 4, 
+                    repeat: Infinity, 
+                    ease: "easeInOut",
+                    delay: 2
+                  }}
+                  whileHover={{ opacity: 0.8, scale: 1 }}
+                />
+              </motion.div>
+            </motion.div>
+
             <motion.h1 
-              className="text-6xl md:text-8xl lg:text-9xl font-bold mb-8 text-gray-900 dark:text-moon-light leading-tight"
+              className="text-6xl md:text-8xl lg:text-9xl font-bold mb-6 text-gray-900 dark:text-moon-light leading-tight"
               variants={heroItemVariants}
             >
               <span className="block text-2xl md:text-3xl font-mono text-gray-600 dark:text-moon-light/60 mb-4 tracking-wider">
@@ -147,7 +199,7 @@ const Home = () => {
             </motion.h1>
             
             <motion.p 
-              className="text-xl md:text-2xl mb-16 max-w-4xl mx-auto text-gray-700 dark:text-moon-light/80 leading-relaxed"
+              className="text-xl md:text-2xl mb-10 max-w-4xl mx-auto text-gray-700 dark:text-moon-light/80 leading-relaxed"
               variants={heroItemVariants}
             >
               Crafting cutting-edge digital experiences where{' '}
@@ -172,7 +224,7 @@ const Home = () => {
             </motion.div>
             
             <motion.div 
-              className="mt-20 text-sm text-gray-500 dark:text-moon-light/40"
+              className="mt-12 text-sm text-gray-500 dark:text-moon-light/40"
               variants={heroItemVariants}
             >
               <motion.div
