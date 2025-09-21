@@ -203,9 +203,10 @@ const Home = () => {
               className="text-lg md:text-1xl mb-6 max-w-3xl mx-auto text-gray-700 dark:text-moon-light/80 leading-relaxed"
               variants={heroItemVariants}
             >
-              Crafting cutting-edge digital experiences where{' '}
-              <span className="gradient-text font-semibold">creativity meets innovation</span>. 
-              Specializing in AI-powered solutions and immersive full-stack development.
+               Jayne Moon is a creative full-stack engineer, {' '}
+              <span className="gradient-text font-semibold">bridging development and design technology to leverage emerging technologies to build innovative solutions.</span>. 
+              Jayne Moon specializes in forging stylish, cutting-edge applications and immersive digital experiences. 
+              Specializing in AI-powered solutions and immersive full-stack development. 
             </motion.p>
             
             <motion.div 
