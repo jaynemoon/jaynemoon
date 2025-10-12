@@ -20,7 +20,7 @@ const Home = () => {
       id: 1,
       title: "AI-Powered Design System",
       description: "Revolutionary design system with AI-driven component generation and intelligent style suggestions",
-      image: "https://images.unsplash.com/photo-1555421689-d68471e189f2?w=400&h=300&fit=crop&auto=format",
+      image: "https://i0.wp.com/port2flavors.com/wp-content/uploads/2022/07/placeholder-612.png?w=1200&ssl=1",
       technologies: ["React", "TypeScript", "AI/ML", "Figma API", "Tailwind"],
       category: "AI Development",
       liveUrl: "https://example.com",
