@@ -205,8 +205,7 @@ const Home = () => {
             >
                Jayne Moon is a creative full-stack engineer, {' '}
               <span className="gradient-text font-semibold">bridging development and design technology to leverage emerging technologies to build innovative solutions.</span>. 
-              Jayne Moon specializes in forging stylish, cutting-edge applications and immersive digital experiences. 
-              Specializing in AI-powered solutions and immersive full-stack development. 
+              Jayne Moon specializes in forging stylish, cutting-edge applications and immersive digital.
             </motion.p>
             
             <motion.div 
@@ -220,9 +219,6 @@ const Home = () => {
                 </svg>
               </GradientButton>
               
-              {/* <GradientButton to="/contact" variant="secondary" size="lg">
-                <span className="font-mono">Let's Connect</span>
-              </GradientButton> */}
             </motion.div>
             
             <motion.div 
