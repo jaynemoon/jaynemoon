@@ -1,21 +1,18 @@
 <div>
-  <h4>☕️ Hello I'm Jayne! A Front-end leaning Full-stack Developer and UX/UI Engineer!</h3>
+  <h3>☕️ Hello I'm Jayne! A Front-end leaning Full-stack Developer and UX/UI Engineer!</h3>
   
-  <i>As a hybrid design engineer, I'm uniquely apt at bridging the gap between development and design spaces, from front-end to back-end API development and systems design. I'm able to balance visual aesthetics with technical performance in my problem solving and solutioning to bring web software to life!</i>
-</div>
+  <p><i>As a hybrid design engineer, I'm uniquely apt at bridging the gap between development and design spaces, from front-end to back-end API development and systems design. I'm able to balance visual aesthetics with technical performance in my problem solving and solutioning to bring web software to life!</i><p>
 
 ----------------------
 
-<div>
   <h4>🚀 What I Do</h4>
-Building production-ready applications with React, TypeScript, Next.js, Vite.js, TailwindCSS and Framer Motion. From front-end UIs, customer-facing UX experiences, to back-end API development and vice-versa.
-
-<h4>🛠️ Tech Stack</h4>
-<ul>
-  <li>Frontend: React, TypeScript, Next.js, Vue, TailwindCSS, Framer Motion</li>
-  <li>Backend: Node.js, Python, PostgreSQL, MongoDB, GraphQL, REST/FastAPI</li>
-  <li>Tools: Docker, AWS, CI/CD, Git, Jest, Figma, Adobe Suite</li>
-</ul>
+  <p>Building production-ready applications with React, TypeScript, Next.js, Vite.js, TailwindCSS and Framer Motion. 
+  <br> From front-end UIs, customer-facing UX experiences, to back-end API development and vice-versa.</p>
+  
+  <h4>🛠️ Tech Stack</h4>
+  <b>Frontend:</b> React, TypeScript, Next.js, Vue, TailwindCSS, Framer Motion
+  <br><b>Backend:</b> Node.js, Python, PostgreSQL, MongoDB, GraphQL, REST/FastAPI
+  <br><b>Tools:</b> Docker, AWS, CI/CD, Git, Jest, Figma, Adobe Suite
 
 </div>
 
