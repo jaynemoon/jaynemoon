@@ -2,8 +2,7 @@
 I'm Jayne, a Front-end leaning Full-stack Developer and UX/UI Engineer!
 
 As a hybrid creative engineer, I'm able to balance visual aesthetics with technical performance in my problem solving and solutioning to bring web designs and software to life!
-Uniquely apt at bridging the gap between development and design spaces within the end-to-end development process, allowing for the flow of communication and cross-over collaboration for better outcomes for delivery, testing and deployment. 
-I'm driven to solve the most pertinant real-world problems to ensure humanity can prosper within the advancing technological landscape. 
+Uniquely apt at bridging the gap between development and design spaces, existing across the full-stack. I'm driven to solve the most pertinant real-world problems to ensure humanity can prosper within the advancing technological landscape. 
 
 🚀 What I Do
 Building production-ready applications with React, TypeScript, Next.js, Vite.js, TailwindCSS and Framer Motion. From front-end UIs, customer-facing UX experiences, to back-end API development and vice-versa.
