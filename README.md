@@ -1,9 +1,16 @@
-<div>
-  <h3>☕️ Hello I'm Jayne! A Front-end leaning Full-stack Developer and UX/UI Engineer!</h3>
-  
-  <p><i>As a hybrid design engineer, I'm uniquely apt at bridging the gap between development and design spaces, from front-end to back-end API development and systems design. I'm able to balance visual aesthetics with technical performance in my problem solving and solutioning to bring web software to life!</i><p>
 
-----------------------
+<div>
+    <div className="max-w-4xl mx-auto p-8">
+        <h1 className="text-3xl font-bold text-gray-900 leading-relaxed">☕️ Hello I'm Jayne! </h1>
+        <h3>A Front-end leaning Full-stack Developer & UX/UI Engineer!</h3>
+    </div>
+    <div>
+        <p className="text-gray-800 leading-relaxed">
+           As a hybrid design engineer, I'm uniquely apt at bridging the gap between development and design spaces, from front-end to back-end API development and systems design. 
+           I'm able to balance visual aesthetics with technical performance in my problem solving and solutioning to bring web software to life!
+        </p>
+  </div>
+
 
   <h4>🚀 What I Do</h4>
   <p>Building production-ready applications with React, TypeScript, Next.js, Vite.js, TailwindCSS and Framer Motion. 
