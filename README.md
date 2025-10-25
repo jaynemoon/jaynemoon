@@ -23,8 +23,6 @@
 
 </div>
 
-----------------------
-
 <div>
   <h4>🫶 Creative Enjayneer-Core: </h4>
     <ul>
