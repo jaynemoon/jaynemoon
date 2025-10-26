@@ -10,21 +10,22 @@
            I'm able to balance visual aesthetics with technical performance in my problem solving and solutioning to bring web software to life!
         </p>
   </div>
+<div> 
 
-
-  <h4>🚀 What I Do</h4>
+</div>
+  <h4 classname="font-bold">🚀 What I Do</h4>
   <p>Building production-ready applications with React, TypeScript, Next.js, Vite.js, TailwindCSS and Framer Motion. 
   <br> From front-end UIs, customer-facing UX experiences, to back-end API development and vice-versa.</p>
   
-  <h4>🛠️ Tech Stack</h4>
-  <b>Frontend:</b> React, TypeScript, Next.js, Vue, TailwindCSS, Framer Motion
-  <br><b>Backend:</b> Node.js, Python, PostgreSQL, MongoDB, GraphQL, REST/FastAPI
-  <br><b>Tools:</b> Docker, AWS, CI/CD, Git, Jest, Figma, Adobe Suite
-
+  <h4 classname="font-bold">🛠️ Tech Stack</h4>
+  <p></p><b>Frontend:</b> React, TypeScript, Next.js, Vue, TailwindCSS, Framer Motion
+      <br><b>Backend:</b> Node.js, Python, PostgreSQL, MongoDB, GraphQL, REST/FastAPI
+      <br><b>Tools:</b> Docker, AWS, CI/CD, Git, Jest, Figma, Adobe Suite
+  </p>
 </div>
 
 <div>
-  <h4>🫶 Creative Enjayneer-Core: </h4>
+    <h3 className="text-3xl font-bold text-gray-900 leading-relaxed">🫶 Creative Enjayneer-Core:</h3>
     <ul>
       <li>I'm driven to solve the most pertinant real-world problems to ensure humanity can prosper within the advancing technological landscape.</li>
       <li>Engineering-first design mind-set, employing a data-driven approach for end-to-end with experimentation of AI workflows.</li>
