@@ -44,7 +44,7 @@ const Contact = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <span className="inline-block text-5xl mb-4">🌙</span>
+            <span className="inline-block text-5xl mb-4"></span>
           </motion.div>
           <motion.h1 
             className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6"
@@ -52,7 +52,7 @@ const Contact = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Let's Connect
+            Let's work together!
           </motion.h1>
           <motion.p 
             className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto"
@@ -84,7 +84,7 @@ const Contact = () => {
               transition={{ duration: 0.5, delay: 1 }}
             >
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-                Let's Start a Conversation
+                Get in touch
               </h2>
               <p className="text-gray-600 dark:text-gray-300 mb-8">
                 Whether you have a moonlit project idea, want to collaborate, or just
@@ -94,7 +94,7 @@ const Contact = () => {
             </motion.div>
 
             {/* Contact Details */}
-            <motion.div 
+            {/* <motion.div 
               className="space-y-6"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -154,7 +154,7 @@ const Contact = () => {
                   <p className="text-gray-600">Within 24 hours</p>
                 </div>
               </motion.div>
-            </motion.div>
+            </motion.div> */}
 
             {/* Social Links */}
             <motion.div
@@ -167,7 +167,7 @@ const Contact = () => {
               </h3>
               <div className="flex space-x-4">
                 <motion.a
-                  href="https://linkedin.com/in/yourprofile"
+                  href="https://www.linkedin.com/in/jayne-moon/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition-colors"
@@ -179,7 +179,7 @@ const Contact = () => {
                   </svg>
                 </motion.a>
                 <motion.a
-                  href="https://github.com/yourprofile"
+                  href="https://github.com/jaynemoon/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gray-800 text-white p-3 rounded-lg hover:bg-gray-900 transition-colors"
@@ -208,20 +208,12 @@ const Contact = () => {
 
           {/* Contact Form */}
           <motion.div 
-            className="bg-white p-8 rounded-lg shadow-lg"
+            className="bg-white dark:bg-gradient-to-r dark:from-stellar-slate-800 dark:to-stellar-slate-700 p-8 rounded-lg shadow-lg "
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
             whileHover={{ scale: 1.01 }}
           >
-            <motion.h2 
-              className="text-2xl font-bold text-gray-900 mb-6"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 1 }}
-            >
-              Send Me a Message
-            </motion.h2>
             <motion.form 
               onSubmit={handleSubmit} 
               className="space-y-6"
@@ -234,8 +226,8 @@ const Contact = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 1.4 }}
               >
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                  Name *
+                <label htmlFor="name" className="block text-sm font-medium text-gray-700  dark:text-moon-light/100 mb-2">
+                  Name:
                 </label>
                 <motion.input
                   type="text"
@@ -245,7 +237,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
-                  placeholder="Your full name"
+                  placeholder="Full name"
                   whileFocus={{ scale: 1.02 }}
                 />
               </motion.div>
@@ -255,8 +247,8 @@ const Contact = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 1.5 }}
               >
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                  Email *
+                <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-moon-light/80 mb-2">
+                  Email:
                 </label>
                 <motion.input
                   type="email"
@@ -266,7 +258,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
-                  placeholder="your.email@example.com"
+                  placeholder="email@address.com"
                   whileFocus={{ scale: 1.02 }}
                 />
               </motion.div>
@@ -276,8 +268,8 @@ const Contact = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 1.6 }}
               >
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-                  Subject *
+                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-moon-light/100 mb-2">
+                  Subject:
                 </label>
                 <motion.input
                   type="text"
@@ -297,8 +289,8 @@ const Contact = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 1.7 }}
               >
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                  Message *
+                <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-moon-light/100 mb-2">
+                  Message:
                 </label>
                 <motion.textarea
                   id="message"

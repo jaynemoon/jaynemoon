@@ -177,13 +177,13 @@ const Projects = () => {
                   ease: "easeInOut" 
                 }}
               >
-                🌙
               </motion.span>
             </motion.div>
             
             <h1 className="text-6xl md:text-8xl font-bold mb-6">
-              <span className="gradient-text text-shimmer animate-text-shimmer">Creative</span><br/>
-              Universe
+              <span className="gradient-text text-shimmer animate-text-shimmer">Featured</span><br/>
+              <span className="text-gray-900 dark:text-moon-light transition-all duration-300"> 
+              Work</span>
             </h1>
             
             <p className="text-xl text-gray-600 dark:text-moon-light/80 max-w-4xl mx-auto leading-relaxed">
@@ -197,7 +197,7 @@ const Projects = () => {
           <AnimatedSection className="mb-16" delay={0.2}>
             <div className="flex flex-col lg:flex-row gap-6 items-center justify-between mb-8">
               {/* Search Bar */}
-              <div className="relative flex-1 max-w-md">
+              {/* <div className="relative flex-1 max-w-md">
                 <input
                   type="text"
                   placeholder="Search projects, technologies..."
@@ -213,7 +213,7 @@ const Projects = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                   </svg>
                 </div>
-              </div>
+              </div> */}
               
               {/* View Toggle */}
               <div className="flex items-center gap-2 glass-effect rounded-xl p-1 border border-moon-accent-silver/10 dark:border-moon-accent-blue/10">
@@ -319,9 +319,8 @@ const Projects = () => {
                     stiffness: 100
                   }}
                 >
-                  <div className={`glass-effect rounded-2xl overflow-hidden border border-moon-accent-silver/10 dark:border-moon-accent-blue/10 
-                                 transition-all duration-500 hover:border-moon-accent-blue/30 hover:shadow-glow-lg group-hover:scale-[1.02]
-                                 ${viewMode === 'list' ? 'flex-1 flex' : 'h-full'}`}>
+                  <div className={`glass-effect rounded-2xl overflow-hidden border border-moon-accent-silver/10 dark:border-moon-accent-blue/10 text-gray-900 dark:text-moon-light transition-all duration-500 hover:border-moon-accent-blue/30 hover:shadow-glow-lg group-hover:scale-[1.02]
+                  ${viewMode === 'list' ? 'flex-1 flex' : 'h-full'}`}>
                     
                     {/* Project Image */}
                     <div className={`relative overflow-hidden ${viewMode === 'list' ? 'w-80 flex-shrink-0' : ''}`}>
@@ -450,7 +449,7 @@ const Projects = () => {
           {/* Call to Action */}
           <AnimatedSection className="text-center mt-20 pt-20 border-t border-moon-accent-silver/10 dark:border-moon-accent-blue/10">
             <div className="max-w-2xl mx-auto">
-              <h2 className="text-4xl font-bold mb-6">
+              <h2 className="text-4xl font-bold dark:text-moon-light mb-6">
                 Ready to <span className="gradient-text">Collaborate</span>?
               </h2>
               <p className="text-xl text-gray-600 dark:text-moon-light/80 mb-8">
